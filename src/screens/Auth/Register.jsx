@@ -14,8 +14,7 @@ import Login from './Login';
       console.log('Password:', password);
     };
     return (
-        <View className='bg-green flex-1 justify-center align-center'>
-       <View className=' flex-1 justify-center items-center bg-white p-6'>
+        <View className='bg-green flex-1 justify-center align-cente'r>ß <View className=' flex-1 justify-center items-center bg-white p-6'>
       <Text className='text-3xl font-semibold  mb-4 text-green-700'>Register</Text>
       <TextInput
         className='w-full h-10 bg-gray-100 mb-2 px-2 hover:border-green-800 '
