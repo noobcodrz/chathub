@@ -7,7 +7,6 @@ const Tab = createBottomTabNavigator();
 export default function Root() {
 	return (
 		<>
-			<ChatList />
 		</>
 	)
 }
