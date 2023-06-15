@@ -1,10 +1,19 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import store, { persistor } from './src/store';
+import { PersistGate } from 'redux-persist/integration/react';
+import { Provider } from 'react-redux';
+
+import Root from './src/clusters/root';
 
 export default function App() {
 	return (
-		<View>
-			<Text className='text-2xl'>App</Text>
-		</View>
+		<Provider store={store}>
+			<PersistGate loading={null} persistor={persistor}>
+				<NavigationContainer>
+					<Root />
+				</NavigationContainer>
+			</PersistGate>
+		</Provider>
 	)
 }

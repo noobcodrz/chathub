@@ -1,10 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { View, Text } from 'react-native';
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-export default function root() {
-  return (
-    <View>
-      <Text>root</Text>
-    </View>
-  )
+
+const Tab = createBottomTabNavigator();
+export default function Root() {
+	return (
+		<View>
+			<Text>Root</Text>
+		</View>
+	)
 }
