@@ -5,15 +5,15 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 
 import Root from './src/clusters/root';
-
-export default function App() {
+import Register from './src/screens/Auth/Register';
+import Login from './src/screens/Auth/Login';
+function App() {
 	return (
 		<Provider store={store}>
 			<PersistGate loading={null} persistor={persistor}>
-				<NavigationContainer>
 					<Root />
-				</NavigationContainer>
 			</PersistGate>
 		</Provider>
 	)
 }
+export default App;
